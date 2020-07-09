@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <property name="autoDelimitKeywords" value="true"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!--覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <!-- 生成的实体类添加toString()方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+        <!-- 不生成注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/courseimooc"
+                        userId="courseimooc"
+                        password="courseimooc">
+        </jdbcConnection>
+
+        <!-- domain类的位置 -->
+        <javaModelGenerator targetProject="src\main\java"
+                            targetPackage="com.course.server.domain"/>
+
+        <!-- mapper xml的位置 -->
+        <sqlMapGenerator targetProject="src\main\resources"
+                         targetPackage="mapper"/>
+
+        <!-- mapper类的位置 -->
+        <javaClientGenerator targetProject="src\main\java"
+                             targetPackage="com.course.server.mapper"
+                             type="XMLMAPPER" />
+
+<!--        <table tableName="test" domainObjectName="Test"/>-->
+<!--        <table tableName="chapter" domainObjectName="Chapter"/>-->
+<!--        <table tableName="section" domainObjectName="Section"/>-->
+<!--        <table tableName="course" domainObjectName="Course"/>-->
+<!--        <table tableName="course_content" domainObjectName="CourseContent"/>-->
+<!--        <table tableName="course_content_file" domainObjectName="CourseContentFile"/>-->
+<!--        <table tableName="teacher" domainObjectName="Teacher"/>-->
+<!--        <table tableName="file" domainObjectName="File"/>-->
+<!--        <table tableName="user" domainObjectName="User"/>-->
+<!--        <table tableName="resource" domainObjectName="Resource"/>-->
+<!--        <table tableName="role" domainObjectName="Role"/>-->
+<!--        <table tableName="role_resource" domainObjectName="RoleResource"/>-->
+<!--        <table tableName="role_user" domainObjectName="RoleUser"/>-->
+<!--        <table tableName="member" domainObjectName="Member"/>-->
+<!--        <table tableName="sms" domainObjectName="Sms"/>-->
+        <table tableName="member_course" domainObjectName="MemberCourse"/>
+    </context>
+</generatorConfiguration>

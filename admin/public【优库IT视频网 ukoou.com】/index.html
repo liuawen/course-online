@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Login Page - Ace Admin</title>
+
+    <meta name="description" content="User login page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <!-- text fonts -->
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/fonts.googleapis.com.css" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/ace.min.css" />
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/ace-part2.min.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/ace-rtl.min.css" />
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="<%= BASE_URL %>ace/assets/css/ace-ie.min.css" />
+    <![endif]-->
+
+    <!--  zTree jquery树插件  -->
+    <link rel="stylesheet" href="<%= BASE_URL %>zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+
+    <!--  阿里云播放器  -->
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css"/>
+
+    <!--  自定义CSS  -->
+    <link rel="stylesheet" href="<%= BASE_URL %>static/css/style.css" type="text/css">
+
+    <!--  富文本编辑器  -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css" rel="stylesheet">
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+    <!--[if lte IE 8]>
+    <script src="<%= BASE_URL %>ace/assets/js/html5shiv.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if !IE]> -->
+    <script src="<%= BASE_URL %>ace/assets/js/jquery-2.1.4.min.js"></script>
+
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script src="<%= BASE_URL %>ace/assets/js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+    </script>
+    <script src="<%= BASE_URL %>ace/assets/js/bootstrap.min.js"></script>
+
+    <!-- page specific plugin scripts -->
+
+    <!--[if lte IE 8]>
+    <script src="<%= BASE_URL %>ace/assets/js/excanvas.min.js"></script>
+    <![endif]-->
+    <script src="<%= BASE_URL %>ace/assets/js/jquery-ui.custom.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/jquery.easypiechart.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/jquery.sparkline.index.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/jquery.flot.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/jquery.flot.pie.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/jquery.flot.resize.min.js"></script>
+
+    <!-- ace scripts -->
+    <script src="<%= BASE_URL %>ace/assets/js/ace-elements.min.js"></script>
+    <script src="<%= BASE_URL %>ace/assets/js/ace.min.js"></script>
+
+    <!--  确认框和提示框  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="<%= BASE_URL %>static/js/toast.js"></script>
+    <script src="<%= BASE_URL %>static/js/confirm.js"></script>
+
+    <!--  loading等待框  -->
+    <script src="<%= BASE_URL %>static/js/jquery.blockUI.min.js"></script>
+    <script src="<%= BASE_URL %>static/js/loading.js"></script>
+
+    <!--  通用工具类  -->
+    <script src="<%= BASE_URL %>static/js/tool.js"></script>
+    <!--  校验类  -->
+    <script src="<%= BASE_URL %>static/js/validator.js"></script>
+    <!--  枚举常量  -->
+    <script src="<%= BASE_URL %>static/js/enums.js"></script>
+    <!--  h5缓存  -->
+    <script src="<%= BASE_URL %>static/js/session-storage.js"></script>
+    <script src="<%= BASE_URL %>static/js/local-storage.js"></script>
+
+    <!--  zTree jquery树插件  -->
+    <script src="<%= BASE_URL %>zTree_v3/js/jquery.ztree.core.min.js"></script>
+    <script src="<%= BASE_URL %>zTree_v3/js/jquery.ztree.excheck.min.js"></script>
+
+    <!--  富文本编辑器  -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
+
+    <!--  md5工具类  -->
+    <script src="<%= BASE_URL %>static/js/md5.js"></script>
+
+    <!--  进度条  -->
+    <script src="<%= BASE_URL %>static/js/progress.js"></script>
+
+    <!--  阿里云播放器  -->
+    <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but admin doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
