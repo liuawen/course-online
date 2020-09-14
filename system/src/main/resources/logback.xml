@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <!-- 修改一下路径-->
+<!--    <property name="PATH" value="/log/imooc/course/system"></property>-->
     <property name="PATH" value="/log/imooc/course/system"></property>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
